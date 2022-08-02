@@ -1,0 +1,85 @@
+{
+  "namespace": "common_tabs_astral",
+	
+  "tab_top@common_tabs.base_tab": {
+    "$is_left_most_tab|default": false,
+    "$is_most_tab|default": false,
+    "variables": [
+      {
+        "requires": "($is_left_most_tab and not $is_most_tab)",
+		    "$unchecked_default_image": "textures/uiastral/play/tab",
+		    "$unchecked_hover_image": "textures/uiastral/play/tab_hover",
+		    "$unchecked_locked_image": "textures/uiastral/play/tab",
+		    "$unchecked_locked_hover_image": "textures/uiastral/play/tab",
+		    "$checked_default_image|default": "textures/uiastral/play/tab_hover",
+		    "$checked_hover_image|default": "textures/uiastral/play/tab_hover",
+		    "$checked_locked_image|default": "textures/uiastral/play/tab_hover",
+		    "$checked_locked_hover_image|default": "textures/uiastral/play/tab_hover"
+      },
+      {
+        "requires": "($is_most_tab and not $is_left_most_tab)",
+		    "$unchecked_default_image": "textures/uiastral/play/tab",
+		    "$unchecked_hover_image": "textures/uiastral/play/tab_hover",
+		    "$unchecked_locked_image": "textures/uiastral/play/tab",
+		    "$unchecked_locked_hover_image": "textures/uiastral/play/tab",
+		    "$checked_default_image|default": "textures/uiastral/play/tab_hover",
+		    "$checked_hover_image|default": "textures/uiastral/play/tab_hover",
+		    "$checked_locked_image|default": "textures/uiastral/play/tab_hover",
+		    "$checked_locked_hover_image|default": "textures/uiastral/play/tab_hover"
+      }
+    ],
+    "$unchecked_default_image": "textures/uiastral/play/tab",
+		"$unchecked_hover_image": "textures/uiastral/play/tab_hover",
+    "$unchecked_locked_image": "textures/uiastral/play/tab",
+    "$unchecked_locked_hover_image": "textures/uiastral/play/tab",
+    "$checked_default_image|default": "textures/uiastral/play/tab_hover",
+    "$checked_hover_image|default": "textures/uiastral/play/tab_hover",
+    "$checked_locked_image|default": "textures/uiastral/play/tab_hover",
+    "$checked_locked_hover_image|default": "textures/uiastral/play/tab_hover"
+  },
+	
+	"top_tab@common_tabs_astral.tab_top": {
+		"$toggle_tts_enabled_binding_type": "global",
+		"$radio_toggle_group": true,
+		"$toggle_name": "navigation_tab",
+		"$toggle_group_default_selected": "$default_tab",
+		"anchor_to": "top_left",
+		"anchor_from": "top_left",
+		"$toggle_tts_type_priority": 1001,
+		"$toggle_tts_toggle_on_text": "",
+		"$toggle_tts_toggle_off_text": "",
+		"$toggle_tts_index_priority": 1002
+	},
+	"world_navigation_tab@common_tabs_astral.top_tab": {
+		"$is_left_most_tab": true,
+		"$tab_view_binding_name": "world_navigation_tab_toggle",
+		"$tab_icon": "",
+		"$count_text_name": "",
+		"$tab_text_name": "",
+		"$toggle_group_forced_index": 0,
+		"$tab_content": "play_astral.common_navigation_tab_content"
+	},
+	"friends_navigation_tab@common_tabs_astral.top_tab": {
+		"$tab_view_binding_name": "friends_navigation_tab_toggle",
+		"$tab_icon": "",
+		"$tab_icon_2": "",
+		"$tab_icon_nobounce": "",
+		"$tab_icon_nobounce_2": "",
+		"$tab_icon_notification": "",
+		"$visibility_binding_override_name": "#friends_tab_show_bouncing",
+		"$visibility_binding_override_name_nobounce": "#friends_tab_show_not_bouncing",
+		"$visibility_binding_override_name_notification": "#friends_tab_show_invites",
+		"$count_text_name": "",
+		"$tab_text_name": "selectWorld.tab.friends",
+		"$toggle_group_forced_index": 1,
+		"$tab_content": "play_astral.common_navigation_tab_content"
+	},
+	"server_navigation_tab@common_tabs_astral.top_tab": {
+		"$tab_view_binding_name": "server_navigation_tab_toggle",
+		"$tab_icon": "",
+		"$count_text_name": "",
+		"$tab_text_name": "",
+		"$toggle_group_forced_index": 2,
+		"$tab_content": "play_astral.common_navigation_tab_content"
+	}
+}

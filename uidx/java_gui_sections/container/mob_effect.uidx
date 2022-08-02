@@ -1,0 +1,251 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "mob_effect_java_dx",
+
+  "mob_effect_base": {
+    "type": "image",
+    "size": [ 18, 18 ]
+  },
+
+  "inventory_mob_effect_base@inventory_java_dx.inventory_base": {
+    "size": [ 18, 18 ]
+  },
+
+  /* From Inventory */
+
+  "absorption_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 36, 234 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 72, 468 ],    "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 144, 936 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 288, 1872 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 576, 3744 ],  "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 1152, 7488 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  "blindness_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 90, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 180, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 360, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 720, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 1440, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 2880, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  "fire_resistance_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 125, 216 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 250, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 500, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 1000, 1728 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 2000, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 4000, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  "haste_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 36, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 72, 396 ],    "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 144, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 288, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 576, 3168 ],  "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 1152, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  "hunger_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 18, 216 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 36, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 72, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 144, 1728 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 288, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 576, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  "invisibility_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 0, 216 ],  "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 0, 432 ],  "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 0, 864 ],  "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 0, 1728 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 0, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 0, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "jump_boost_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 36, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 72, 432 ],    "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 144, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 288, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 576, 3456 ],  "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 1152, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "mining_fatigue_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 54, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 108, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 216, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 432, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 864, 3168 ],  "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 1728, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "nausea_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 54, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 108, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 216, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 432, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 864, 3456 ],  "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 1728, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "night_vision_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 72, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 144, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 288, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 576, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 1152, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 2304, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "poison_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 107, 198 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 214, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 428, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 856, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 1712, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 3424, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "regeneration_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 125, 198 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 250, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 500, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 1000, 1584 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 2000, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 4000, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "resistance_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 107, 216 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 214, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 428, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 856, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 1712, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 3424, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "slowness_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 18, 198 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 36, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 72, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 144, 1584 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 288, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 576, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  "speed_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 0, 198 ],  "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 0, 396 ],  "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 0, 792 ],  "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 0, 1584 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 0, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 0, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "strength_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 72, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 144, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 288, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 576, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 1152, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 2304, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "water_breathing_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 0, 234 ],  "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 0, 468 ],  "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 0, 936 ],  "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 0, 1872 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 0, 3744 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 0, 7488 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "weakness_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 90, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 180, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 360, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 720, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 1440, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 2880, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+  
+  "wither_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "variables": [
+      { "requires": "($inventory_resolution = '256x')",  "$inventory_uv": [ 18, 234 ],   "$inventory_uv_size": [ 18, 18 ] },
+      { "requires": "($inventory_resolution = '512x')",  "$inventory_uv": [ 36, 468 ],   "$inventory_uv_size": [ 36, 36 ] },
+      { "requires": "($inventory_resolution = '1024x')", "$inventory_uv": [ 72, 936 ],   "$inventory_uv_size": [ 72, 72 ] },
+      { "requires": "($inventory_resolution = '2048x')", "$inventory_uv": [ 144, 1872 ], "$inventory_uv_size": [ 144, 144 ] },
+      { "requires": "($inventory_resolution = '4096x')", "$inventory_uv": [ 288, 3744 ], "$inventory_uv_size": [ 288, 288 ] },
+      { "requires": "($inventory_resolution = '8192x')", "$inventory_uv": [ 576, 7488 ], "$inventory_uv_size": [ 576, 576 ] }
+    ]
+  },
+
+  /* New Effects */
+
+  "bad_omen_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/bad_omen_effect"
+  },
+
+  "conduit_power_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/conduit_power_effect"
+  },
+
+  "health_boost_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/health_boost_effect"
+  },
+
+  "hero_of_the_village_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/village_hero_effect"
+  },
+  
+  "levitation_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/levitation_effect"
+  },
+  
+  "slow_falling_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/slow_falling_effect"
+  }
+}

@@ -202,7 +202,15 @@
   "more_options_screen_panel@common_menus_dx.java_edition_menu_panel_template": {
     "$top_content": "more_options_dx.more_options_label",
     "$scrolling_content": "more_options_dx.panel_content",
-    "$bottom_content": "more_options_dx.done_panel"
+    "$bottom_content": "more_options_dx.done_panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "more_options_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
   },
 
   "done_panel": {

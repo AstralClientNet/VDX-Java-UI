@@ -247,6 +247,67 @@
     "uidx/java_gui_sections/container/creative_inventory_old.uidx",
     "uidx/java_gui_sections/container/inventory_old.uidx",
     "uidx/main_screens/hud_sections/bars_collection_old.uidx",
-    "uidx/main_screens/settings_sections/video_tooltips.uidx"
+    "uidx/main_screens/settings_sections/video_tooltips.uidx",
+
+    /*//////////////////////////////////////////////////////////////////////////////////////////////
+//  Astral assets
+//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    /*//// Common Sections ////*/
+    ".uiastral/common_sections/ui_astral_textures.uiastral",
+    ".uiastral/common_sections/ui_animated_textures.uiastral",
+    ".uiastral/common_sections/ui_template_buttons.uiastral",
+    ".uiastral/common_sections/ui_template_scroll.uiastral",
+    ".uiastral/common_sections/ui_template_toggles.uiastral",
+    ".uiastral/common_sections/ui_template_tabs.uiastral",
+    /*//// Main Screens ////*/
+    ".uiastral/main_screens/custom_objects_panel.uiastral",
+    ".uiastral/main_screens/start_screen.uiastral",
+    ".uiastral/main_screens/pause_screen.uiastral",
+    ".uiastral/main_screens/emote_wheel_screen.uiastral",
+    ".uiastral/main_screens/play_screen.uiastral",
+    ".uiastral/main_screens/play_sections/worlds.uiastral",
+    ".uiastral/main_screens/play_sections/friends.uiastral",
+    ".uiastral/main_screens/play_sections/servers.uiastral",
+    /*//// Menu Sections ////*/
+    ".uiastral/main_screens/menu_sections/menu_screen.uiastral",
+    ".uiastral/main_screens/menu_sections/mods_content.uiastral",
+    /*//// Cosmetic sextions /////*/
+    ".uiastral/main_screens/cosmetics_sections/select_skin_screen.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_screen.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_tabs.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_create.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_colors.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_sizing.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_skins.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_cloaks.uiastral",
+    ".uiastral/main_screens/cosmetics_sections/cosmetics_emotes.uiastral",
+    ".uiastral/main_screens/players_menu_janger.uiastral",
+    "uidx/inventory_screens/beacon_old_screen.uidx",
+    "uidx/java_gui_sections/container/inventory_old.uidx",
+    "uidx/java_gui_sections/container/inventory.uidx",
+    "uidx/inventory_screens/brewing_stand_old_screen.uidx",
+    "uidx/inventory_screens/crafting_old_screen.uidx",
+    "uidx/inventory_screens/creative_old_screen.uidx",
+    "uidx/inventory_screens/inventory_old_screen.uidx",
+    "uidx/inventory_screens/mob_effect_old_screen.uidx",
+    "uidx/inventory_screens/recipe_book_side.uidx",
+    "uidx/java_gui_sections/mob_effect_old.uidx",
+    "uidx/java_gui_sections/container/beacon_old.uidx",
+    "uidx/java_gui_sections/container/brewing_stand_old.uidx",
+    "uidx/java_gui_sections/container/creative_inventory_old.uidx",
+    "uidx/java_gui_sections/container/inventory_old.uidx",
+    "uidx/main_screens/hud_sections/bars_collection_old.uidx",
+    "uidx/main_screens/settings_sections/video_tooltips.uidx",
+    ////////*/ Mixed UI Assets /*////////
+    "uidx/main_screens/book_new_screen.uidx",
+    "uidx/inventory_screens/cartography_new_screen.uidx",
+    "uidx/inventory_screens/crafting_new_screen.uidx",
+    "uidx/inventory_screens/creative_new_screen.uidx",
+    "uidx/inventory_screens/inventory_new_screen.uidx",
+    "uidx/inventory_screens/loom_new_screen.uidx",
+    "uidx/inventory_screens/recipe_book_new_screen.uidx",
+    "uidx/inventory_screens/stonecutter_new_screen.uidx",
+    "uidx/inventory_screens/trade_2_new_screen.uidx"
   ]
 }

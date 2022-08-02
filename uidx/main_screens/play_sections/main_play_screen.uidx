@@ -45,7 +45,7 @@
 
   "base_label@common_dx.global_label": {
     "size": [ "default", 10 ],
-    "shadow": true,
+    "shadow": false,
     "color": "$main_menu_button_default_color"
   },
 
@@ -103,16 +103,15 @@
         "main_bg_panel": {
           "type": "image",
           "layer": -12,
-          "texture": "textures/uidx/global/color_base",
-          "color": [ 0.0, 0.0, 0.0 ],
-          "fill": true
-        }
+          "texture": "textures/ui/bg_invis"
+      }
       }
     ]
   },
   
-  "play_screen_content": {
-    "type": "panel",
+  "play_screen_content@common.base_screen": {
+    "type": "screen",
+    "cache_screen": false,
     "$middle_clips_children": false,
     "controls": [
       { "button_tabs@play_dx.button_tabs": { } },

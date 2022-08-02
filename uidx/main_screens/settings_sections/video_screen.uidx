@@ -696,6 +696,14 @@
 
   "video_screen_panel": {
     "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "video_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "controls": [
       {
         "main@common_menus_dx.java_edition_menu_panel_template": {

@@ -22,21 +22,21 @@
     "size": [ "100%", "100%" ],
 
     /* Content panels */
-    "$top_content|default": "common.empty_panel",
+    "$top_content|default": "",
     "$middle_content|default": "common_menus_dx.middle_panel",
-    "$bottom_content|default": "common.empty_panel",
+    "$bottom_content|default": "",
     /* Panels sizes */
     "$top_content_size|default": [ "100%", 32 ],
     "$bottom_content_size|default": [ "100%", 32 ],
     /* Background */
-    "$bg|default": "java_gui_common.options_background",
+    "$bg|default": "java_gui_common.options_background_invis",
     "$bg_middle|default": "java_gui_common.options_background_middle",
     /* Misc */
     "$middle_clips_children|default": true,
 
     "controls": [
       { "java_menu_stack_panel@common_menus_dx.java_menu_stack_panel": { "layer": 10 } },
-      { "bg@$bg": { "layer": 1, "ignored": "(not $middle_clips_children)" } }
+      { "bg@$bg": { "layer": -20, "ignored": "(not $middle_clips_children)" } }
     ]
   },
 
@@ -50,19 +50,6 @@
           "size": "$top_content_size",
           "layer": 40,
           "controls": [
-            {
-              "black_panel": {
-                "ignored": "($middle_clips_children)",
-                "layer": -1,
-                "type": "image",
-                "texture": "textures/uidx/global/color_base",
-                "color": [ 0.0, 0.0, 0.0 ],
-                "anchor_from": "top_middle",
-                "anchor_to": "top_middle",
-                "size": [ "100%", 32 ],
-                "offset": [ 0, -32 ]
-              }
-            },
             { "top_content@$top_content": { "layer": 45 } },
             { "bg@$bg": { "ignored": "($middle_clips_children)" } },
             { 
@@ -91,19 +78,6 @@
           "size": "$bottom_content_size",
           "layer": 40,
           "controls": [
-            {
-              "black_panel": {
-                "ignored": "($middle_clips_children)",
-                "layer": -1,
-                "type": "image",
-                "texture": "textures/uidx/global/color_base",
-                "color": [ 0.0, 0.0, 0.0 ],
-                "anchor_from": "bottom_middle",
-                "anchor_to": "bottom_middle",
-                "size": [ "100%", 32 ],
-                "offset": [ 0, 32 ]
-              }
-            },
             { "top_content@$bottom_content": { "layer": 45 } },
             { "bg@$bg": { "ignored": "($middle_clips_children)" } },
             { 
@@ -125,14 +99,6 @@
     "anchor_to": "top_middle",
     "size": [ "100%", "100%" ],
     "controls": [
-      {
-        "bg_overlay_border": {
-          "type": "image",
-          "layer": 40,
-          "texture": "textures/uidx/menus/java_middle_bg_border",
-          "size": [ "100%", "100%" ]
-        }
-      },
       { "panel_content@common_menus_dx.java_menu_scroll_panel": { "layer": 5 } },
       { "bg@$bg_middle": { "layer": 1 } }
     ]
@@ -259,7 +225,7 @@
           "clips_children": "$middle_clips_children",
           "controls": [
             {
-              "scrolling_content@$bg_middle": {
+              "scrolling_content@$bg": {
                 "size": [ "100%", "100%c" ],
                 "layer": 1,
                 "$scrolling_content_anchor_from|default": "top_left",

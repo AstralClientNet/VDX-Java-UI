@@ -5,6 +5,7 @@
 
   "main_panel": {
     "type": "stack_panel",
+    "cache_screen": true,
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
     "size": [ 202, "100%" ],
@@ -127,8 +128,9 @@
     ]
   },
 
-  "main_screen_content": {
-    "type": "panel",
+  "main_screen_content@common.base_screen": {
+                          "type": "panel",
+                          "cache_screen": true,
     "$back_screen_toggle_name": "world_navigation_tab",
     "controls": [
       {

@@ -1,12 +1,13 @@
-﻿/*File modified by @CrisXolt.
-//(c) Don't use any code design without permission!*/
-{
+﻿{
   "start_screen": {
     "$is_popup_dialog_in_game": false,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
-    "$screen_content": "start_dx.center_screen",
-    "$screen_bg_content": "start_dx.full_screen"
+    "$screen_content": "start_astral.center_screen",
+    "$screen_bg_content": "start_astral.full_screen"
   }
 }

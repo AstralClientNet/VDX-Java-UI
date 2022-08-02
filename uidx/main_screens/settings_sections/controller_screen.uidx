@@ -270,6 +270,14 @@
   
   "controller_screen_panel": {
     "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "controller_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "controls": [
       {
         "main": {

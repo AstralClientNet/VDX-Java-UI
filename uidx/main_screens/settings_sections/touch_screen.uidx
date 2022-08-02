@@ -483,6 +483,14 @@
   "touch_screen_panel@common_menus_dx.java_edition_menu_panel_template": {
     "$top_content": "touch_dx.touch_label",
     "$top_content_size": [ "100%", 32 ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "touch_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "$scrolling_content": "touch_dx.touch_stack_panel",
     "$bottom_content": "touch_dx.touch_bottom_content"
   },

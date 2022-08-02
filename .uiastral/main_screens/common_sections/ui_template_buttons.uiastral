@@ -1,0 +1,116 @@
+{
+  "namespace": "common_buttons_astral",
+
+  /*//// Main Button ////*/
+  
+  "main_button@common.button": {
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_astral.default": { } },
+      { "hover@common_buttons_astral.hover": { } },
+      { "pressed@common_buttons_astral.pressed": { } },
+      { "locked@common_buttons_astral.locked": { } }
+    ]
+  },
+  
+  "close_button@common.button": {
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_astral.default": { } },
+      { "hover@common_buttons_astral.hover": { "$button_texture": "astral_textures_common.close_button_hover" } },
+      { "pressed@common_buttons_astral.pressed": { } },
+      { "locked@common_buttons_astral.locked": { } }
+    ]
+  },
+  
+  "red_button@common.button": {
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_astral.default": { "$button_texture": "astral_textures_common.red_button_default" } },
+      { "hover@common_buttons_astral.hover": { "$button_texture": "astral_textures_common.red_button_hover" } },
+      { "pressed@common_buttons_astral.pressed": { "$button_texture": "astral_textures_common.red_button_hover" } },
+      { "locked@common_buttons_astral.locked": { "$button_texture": "astral_textures_common.red_button_default" } }
+    ]
+  },
+
+  /*//// Tab Button ////*/
+
+  "unchecked@common_buttons_astral.button_panel": {
+    "$has_hover_text": false,
+    "$text_color": [ 0.75, 0.75, 0.75 ],
+    "$button_texture": "astral_textures_common.mods_tab_button_default"
+  },
+
+  "unchecked_hover@common_buttons_astral.button_panel": {
+    "$has_hover_text": true,
+    "$text_color": [ 1.0, 1.0, 1.0 ],
+    "$button_texture": "astral_textures_common.mods_tab_button_hover"
+  },
+
+  "checked@common_buttons_astral.button_panel": {
+    "$has_hover_text": false,
+    "$text_color": [ 1.0, 1.0, 1.0 ],
+    "$button_texture": "astral_textures_common.mods_tab_button_hover"
+  },
+
+  "checked_hover@common_buttons_astral.button_panel": {
+    "$has_hover_text": true,
+    "$text_color": [ 1.0, 1.0, 1.0 ],
+    "$button_texture": "astral_textures_common.mods_tab_button_hover"
+  },
+
+  /*//// Main Button Resources ////*/
+
+  "default@common_buttons_astral.button_panel": {
+    "$has_hover_text": false,
+    "$text_color": [ 0.75, 0.75, 0.75 ],
+    "$button_texture": "astral_textures_common.main_button_default"
+  },
+
+  "hover@common_buttons_astral.button_panel": {
+    "$has_hover_text": true,
+    "$text_color": [ 1.0, 1.0, 1.0 ],
+    "$button_texture": "astral_textures_common.main_button_hover"
+  },
+
+  "pressed@common_buttons_astral.button_panel": {
+    "$has_hover_text": false,
+    "$text_color": [ 1.0, 1.0, 1.0 ],
+    "$button_texture": "astral_textures_common.main_button_hover"
+  },
+
+  "locked@common_buttons_astral.button_panel": {
+    "$has_hover_text": false,
+    "$text_color": [ 0.5, 0.5, 0.5 ],
+    "$button_texture": "astral_textures_common.main_button_default"
+  },
+
+  "button_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "layer": 10,
+    "$button_content|default": "common_buttons_astral.button_label",
+    "controls": [
+      { "button_content@$button_content": { "layer": 3 } },
+      { "button_texture@$button_texture": { "layer": 1 } }
+    ]
+  },
+
+  "button_label": {
+    "type": "label",
+    "shadow": true,
+    "font_type": "Roboto-Regular",
+    "font_scale_factor": 0.7,
+    "size": [ "default", "default" ],
+    "color": "$text_color",
+    "offset": [ 0, -1 ],
+    "alpha": 0.7,
+    "$text_color|default": [ 0.75, 0.75, 0.75 ],
+    "text": "$button_text",
+    "bindings": [
+      {
+        "binding_name": "$button_text"
+      }
+    ]
+  }
+}

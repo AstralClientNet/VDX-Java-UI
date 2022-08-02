@@ -338,6 +338,14 @@
   
   "game_world_screen_content": {
     "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "game_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "controls": [
       {
         "game_main_panel@game_world_dx.game_main_panel": {

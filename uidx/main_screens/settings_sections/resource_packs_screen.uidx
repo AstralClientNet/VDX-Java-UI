@@ -790,7 +790,14 @@
     "$bottom_content": "resource_packs_dx.resource_pack_bottom_content",
     "$bottom_content_size": [ "100%", 40 ],
     "$scroll_bar_contained": false,
-
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "resource_pack_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "$scrolling_content": "resource_packs_dx.avaliable_resource_pack_stack_panel",
     "$scrolling_content_right": "resource_packs_dx.selected_resource_pack_stack_panel"
   },

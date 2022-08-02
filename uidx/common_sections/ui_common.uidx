@@ -5,12 +5,12 @@
 
   "global_label": {
     "type": "label",
-    "font_type": "normal"
+    "font_type": "smooth"
   },
 
   "global_label_numbers": {
     "type": "label",
-    "font_type": "normal"
+    "font_type": "smooth"
   },
 
   /*//// Text Edit Box ////*/

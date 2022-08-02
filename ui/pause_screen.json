@@ -1,9 +1,50 @@
-/*File modified by @CrisXolt.
-//(c) Don't use any code design without permission!*/
 {
-  "pause_screen": {
-    "$screen_content": "pause_dx.center_screen",
-    "$screen_bg_content": "pause_dx.full_screen",
-    "variables": [ ]
+  "namespace": "pause",
+  "pause_screen@common.base_screen": {
+    "render_game_behind": true,
+    "force_render_below": true,
+    "cache_screen": true,
+    "$screen_animations": [
+      "@common.screen_exit_animation_push_fade",
+      "@common.screen_exit_animation_pop_fade",
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
+    "variables": [
+      {
+        "requires": "$ignore_edu_pause",
+        "$screen_content": "pause_astral.center_screen"
+      }
+    ]
+  },
+
+  "gametag_wrapper": {
+    "type": "panel",
+    "size": ["100%c", "100%"],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "controls": [
+      {
+        "gamertag": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "text": "#gamertag",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "font_type": "smooth",
+          "font_scale_factor": 0.8,
+          "size": ["100%", 10],
+          "offset": [0, 0.5],
+          "layer": 2,
+          "bindings": [
+            {
+              "binding_name": "#gamertag",
+              "binding_type": "collection",
+              "binding_collection_name": "players_collection"
+            }
+          ]
+        }
+      }
+    ]
   }
 }

@@ -1,0 +1,25 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "creative_inv_java_old_dx",
+
+  /*//// Tab Inventory ////*/
+
+  "dialog_bg_tab_inventory": {
+    "type": "image",
+    "texture": "assets/minecraft/textures/gui/container/creative_inventory/tab_inventory",
+    "size": [ 195, 136 ],
+    "$creative_tab_inv_uv|default": [ 0, 0 ],
+    "$creative_tab_inv_uv_size|default": [ 0, 0 ],
+    "uv": "$creative_tab_inv_uv",
+    "uv_size": "$creative_tab_inv_uv_size",
+    "variables": [
+      { "requires": "($creative_tab_inv_resolution = '256x')", "$creative_tab_inv_uv_size": [ 195, 136 ] },
+      { "requires": "($creative_tab_inv_resolution = '512x')", "$creative_tab_inv_uv_size": [ 390, 272 ] },
+      { "requires": "($creative_tab_inv_resolution = '1024x')", "$creative_tab_inv_uv_size": [ 780, 544 ] },
+      { "requires": "($creative_tab_inv_resolution = '2048x')", "$creative_tab_inv_uv_size": [ 1560, 1088 ] },
+      { "requires": "($creative_tab_inv_resolution = '4096x')", "$creative_tab_inv_uv_size": [ 3120, 2176 ] },
+      { "requires": "($creative_tab_inv_resolution = '8192x')", "$creative_tab_inv_uv_size": [ 6240, 4352 ] }
+    ]
+  }
+}

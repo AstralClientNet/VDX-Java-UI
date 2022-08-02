@@ -246,6 +246,14 @@
 
   "creator_screen_panel@common_menus_dx.java_edition_menu_panel_template": {
     "$is_toolbox_ignored|default": false,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "creator_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "variables": [
       {
         "requires": "(not $is_desktop or $is_publish)",

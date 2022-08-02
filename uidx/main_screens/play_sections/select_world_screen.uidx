@@ -23,7 +23,7 @@
           "type": "panel",
           "size": [ "100%", "100%c" ],
           "controls": [
-            { 
+            {
               "grid@play.local_world_item_grid": {
                 "size": [ 270, "default" ],
                 "anchor_to": "top_middle",

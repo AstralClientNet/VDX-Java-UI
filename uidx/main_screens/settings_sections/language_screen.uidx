@@ -177,7 +177,14 @@
   "language_screen_panel@common_menus_dx.java_edition_menu_panel_template": {
     "$top_content": "language_dx.language_label",
     "$bottom_content": "language_dx.language_bottom_content",
-  
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "language_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "$scrolling_content": "language_dx.language_section",
     "$bottom_content_size": [ "100%", 61 ]
   }

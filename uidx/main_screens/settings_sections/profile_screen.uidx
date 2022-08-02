@@ -797,7 +797,14 @@
   "profile_screen_panel@common_menus_dx.java_edition_menu_panel_template": {
     "$top_content": "profile_dx.profile_label",
     "$bottom_content": "profile_dx.done_panel",
-  
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "profile_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "$scrolling_content": "profile_dx.panel_content",
     "$scroll_view_port_size": [ 324, "100%" ]
   }

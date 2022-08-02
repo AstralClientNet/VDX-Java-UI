@@ -313,7 +313,7 @@
     "text": "$button_text",
     "offset": "$text_offset",
     "$button_text_binding_type|default": "none",
-    "shadow": true,
+    "shadow": false,
     "color": "$text_color",
     "max_size": [ "100% - 4px", "100% - 4px" ],
     "bindings": [

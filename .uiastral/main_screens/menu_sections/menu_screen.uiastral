@@ -1,0 +1,85 @@
+{
+  "namespace": "main_menu_astral",
+
+  "button_tab@common_toggles_astral.toggle_panel": {
+    "$radio_toggle_group": true,
+    "$toggle_name": "mods_nav_tab",
+    "$toggle_group_default_selected": "$default_tab",
+
+    "$unchecked_control": "common_buttons_astral.unchecked",
+    "$checked_control": "common_buttons_astral.checked",
+    "$unchecked_hover_control": "common_buttons_astral.unchecked_hover",
+    "$checked_hover_control": "common_buttons_astral.checked_hover"
+  },
+
+  "mods_tab@main_menu_astral.button_tab": {
+    "size": [ 45, 18 ],
+    "$tab_view_binding_name": "mods_tab_toggle",
+    "$button_text": "M O D S",
+    "$toggle_default_state": true,
+    "$toggle_group_forced_index": 0
+  },
+
+  "settings_tab@main_menu_astral.button_tab": {
+    "size": [ 66, 18 ],
+    "$tab_view_binding_name": "settings_tab_toggle",
+    "$button_text": "S E T T I N G S",
+    "$toggle_group_forced_index": 1
+  },
+
+  "waypoints_tab@main_menu_astral.button_tab": {
+    "size": [ 76, 18 ],
+    "$tab_view_binding_name": "waypoints_tab_toggle",
+    "$button_text": "W A Y P O I N T S",
+    "$toggle_group_forced_index": 2
+  },
+
+  "tab_buttons": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", 18 ],
+    "offset": [ 0, 8 ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      { "mods_tab@main_menu_astral.mods_tab": { } },
+      { "panel_0": { "type": "panel", "size": [ 6, 17 ] } },
+      { "settings_tab@main_menu_astral.settings_tab": { } },
+      { "panel_1": { "type": "panel", "size": [ 6, 17 ] } },
+      { "waypoints_tab@main_menu_astral.waypoints_tab": { } }
+    ]
+  },
+
+  "main_menu_panel_content@astral_textures_common.mods_panel": {
+    "size": [ 496, 227 ],
+    "controls": [
+      { "tab_buttons@main_menu_astral.tab_buttons": { } },
+      { 
+        "mods_edit_layout_button_bg@astral_textures_common.mods_edit_layout_button_bg": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left"
+        }
+      },
+      { 
+        "mods_profile_panel@astral_textures_common.mods_profile_panel": {
+          "offset": [ 0, 43 ],
+          "size": [ 107, 155 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "mods_content_panel@mods_content_astral.mods_content_panel": {
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "mods_tab_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

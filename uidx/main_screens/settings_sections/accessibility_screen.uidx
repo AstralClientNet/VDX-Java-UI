@@ -246,7 +246,14 @@
   "accessibility_screen_panel@common_menus_dx.java_edition_menu_panel_template": {
     "$top_content": "accessibility_dx.accessibility_label",
     "$bottom_content": "accessibility_dx.accessibility_bottom_content",
-  
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "accessibility_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "$scrolling_content": "accessibility_dx.accessibility_stack_panel",
     "$scroll_view_port_size": [ 324, "100%" ]
   }

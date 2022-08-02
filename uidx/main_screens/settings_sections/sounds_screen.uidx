@@ -230,6 +230,14 @@
   
   "sounds_screen_panel": {
     "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "sound_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "controls": [
       { "panel_content@sounds_dx.panel_content": { } }
     ]

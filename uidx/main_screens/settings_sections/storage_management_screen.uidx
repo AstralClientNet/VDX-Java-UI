@@ -954,6 +954,14 @@
   
   "storage_management_screen_panel": {
     "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "storage_management_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
     "controls": [
       {
         "storage_management_label@settings_dx.base_label": {

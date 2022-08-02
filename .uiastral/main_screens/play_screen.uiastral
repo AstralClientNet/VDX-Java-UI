@@ -1,0 +1,101 @@
+{
+  "namespace": "play_astral",
+	
+  "common_button_text": {
+    "type": "label",
+    "layer": 1,
+    "shadow": false,
+    "text": "$common_button_text_text",
+		"color": "$text_color"
+  },
+	
+  "tab_text_stack_panel": {
+	 	"type": "panel",
+    "size": [ "fill", "100%" ],
+    "controls": [
+            {
+              "text@play_astral.common_button_text": {
+                "layer": 3,
+                "text": "$tab_text_name",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "offset": [ 1, 0 ],
+						    "$text_color": "$color_t",
+								"$default_color_t|default": [ 142, 142, 142 ],
+								"$hover_color_t|default": [ 251, 255, 255 ],
+								"$pressed_default_color_t|default": [ 251, 255, 255 ]
+              }
+         }
+    ]
+  },
+	
+  "common_navigation_tab_content": {
+	 "type": "panel",
+    "size": [ "100%-3px", "100% - 4px" ],
+    "controls": [
+      {
+        "count_text@play_astral.tab_text_stack_panel": {}
+      }
+    ]
+  },
+	
+	"top_selection": {
+		"type": "panel",
+		"controls": [
+			{
+				"world@common_tabs_astral.world_navigation_tab": {
+					"anchor_from": "top_middle",
+					"anchor_to": "top_middle",
+					"offset": [
+						-60,
+						0
+					],
+					"size": [
+						32,
+						22
+					],
+					"$tab_text_name": "test1"
+				}
+			},
+			{
+				"friends@common_tabs_astral.friends_navigation_tab": {
+					"size": [
+						32,
+						22
+					],
+					"offset": [
+						0,
+						0
+					],
+					"anchor_from": "top_middle",
+					"anchor_to": "top_middle",
+					"$tab_text_name": "test2"
+				}
+			},
+			{
+				"server@common_tabs_astral.server_navigation_tab": {
+					"size": [
+						32,
+						22
+					],
+					"anchor_from": "top_middle",
+					"anchor_to": "top_middle",
+					"$tab_text_name": "test3",
+					"offset": [
+						60,
+						0
+					]
+				}
+			}
+		]
+	},
+
+  /*//// Screen ////*/
+
+  "play_panel": {
+    "type": "panel",
+    "controls": [
+      { "top_selection@play_astral.top_selection": { } }
+    ]
+  }
+}

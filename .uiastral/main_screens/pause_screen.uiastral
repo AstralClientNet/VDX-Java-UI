@@ -1,0 +1,108 @@
+{
+  "namespace": "pause_astral",
+
+  /*//// Screen ////*/
+
+  "center_screen": {
+    "type": "panel",
+    "controls": [
+      { "bottom_buttons@pause_astral.bottom_buttons": { } }
+    ]
+  },
+
+  "return_to_game_button@common_buttons_astral.main_button": {
+    "size": [ 84, 20 ],
+    "offset": [ -43.5, 0 ],
+    "$pressed_button_name": "button.menu_continue",
+    "$button_text": "menu.returnToGame"
+  },
+
+  "quit_button@common_buttons_astral.purple_button": {
+    "size": [ 84, 20 ],
+    "offset": [ 43.5, 0 ],
+    "$pressed_button_name": "button.menu_quit",
+    "variables": [
+      {
+        "requires": "(not $is_secondary_client)",
+        "$button_text": "Disconnect"
+      },
+      {
+        "requires": "$is_secondary_client",
+        "$button_text": "Disconnect"
+      }
+    ]
+  },
+
+  "achievements_button@common_buttons_astral.main_button": {
+    "size": [ 84, 20 ],
+    "offset": [ -43.5, 23 ],
+    "$pressed_button_name": "button.menu_achievements",
+    "$button_text": "menu.achievements"
+  },
+
+  "profile_button@common_buttons_astral.main_button": {
+    "size": [ 84, 20 ],
+    "$pressed_button_name": "button.to_profile_or_skins_screen",
+    "$button_text": "Wardrobe",
+    "offset": [ 43.5, 23 ],
+    "$button_tts_header": "accessibility.start.profile"
+  },
+
+  "take_screenshot_button@common_buttons_astral.main_button": {
+    "$pressed_button_name": "button.screenshot",
+    "size": [ 171, 20 ],
+    "offset": [ 0, 46 ],
+    "$button_text": "Take Screenshot"
+  },
+
+  "settings_button@common_buttons_astral.main_button": {
+    "size": [ 84, 20 ],
+    "offset": [ -43.5, 69 ],
+    "$pressed_button_name": "button.menu_settings",
+    "$button_text": "menu.options"
+  },
+
+  "invite_button@common_buttons_astral.main_button": {
+    "size": [ 84, 20 ],
+    "offset": [ 43.5, 69 ],
+    "$pressed_button_name": "button.menu_invite_players",
+    "$button_text": "Invite"
+  },
+
+  "feed_button@common_buttons_astral.main_button": {
+    "$button_text": "Feed and Gallery",
+    "$pressed_button_name": "button.menu_feed",
+    "size": [ 171, 20 ],
+    "offset": [ 0, 92 ]
+  },
+
+  "pausebg": {
+    "type": "image",
+    "texture": "textures/ui/pause_screen",
+    "size": [ 200, 200 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [ 0, 35],
+    "layer": -1
+  },
+
+  "bottom_buttons": {
+    "type": "panel",
+    "size": [ 200, 112 ],
+    "anchor_from": "center",
+    "anchor_to": "top_middle",
+    "offset": [ 0, -100 ],
+    "controls": [
+      { "return_to_game_button@pause_astral.return_to_game_button": { } },
+      { "achievements_button@pause_astral.achievements_button": { } },
+      { "take_screenshot_button@pause_astral.take_screenshot_button": { } },
+      { "settings_button@pause_astral.settings_button": { } },
+      { "invite_button@pause_astral.invite_button": { } },
+      { "profile_button@pause_astral.profile_button": { } },
+      { "players_menu_button@pause_astral.players_menu_button": { } },
+      { "feed_button@pause_astral.feed_button": { } },
+      { "quit_button@pause_astral.quit_button": { } },
+      { "pausebg@pause_astral.pausebg": { } }
+    ]
+  }
+}

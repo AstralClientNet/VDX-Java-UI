@@ -237,6 +237,21 @@
       { "requires": "($options_background_resolution = '512x')", "$bg_tiled_scale": [ 0.0625, 0.0625 ] }
     ]
   },
+    "options_background_invis": {
+      "type": "image",
+      "texture": "textures/ui/bg_invis",
+      "$bg_tiled_scale|default": [ 0, 0 ],
+      "tiled_scale": "$bg_tiled_scale",
+      "variables": [
+        { "requires": "($options_background_resolution = '16x')", "$bg_tiled_scale": [ 2, 2 ] },
+        { "requires": "($options_background_resolution = '32x')", "$bg_tiled_scale": [ 1, 1 ] },
+        { "requires": "($options_background_resolution = '64x')", "$bg_tiled_scale": [ 0.5, 0.5 ] },
+        { "requires": "($options_background_resolution = '128x')", "$bg_tiled_scale": [ 0.25, 0.25 ] },
+        { "requires": "($options_background_resolution = '256x')", "$bg_tiled_scale": [ 0.125, 0.125 ] },
+        { "requires": "($options_background_resolution = '512x')", "$bg_tiled_scale": [ 0.0625, 0.0625 ] }
+      ]
+    },
+
 
   "options_background_middle@java_gui_common.options_background": {
     "color": [ 0.125, 0.125, 0.125, 1.0 ]

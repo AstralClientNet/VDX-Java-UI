@@ -1,0 +1,49 @@
+{
+  "namespace": "mods_content_astral",
+
+  "mod_grid_item": {
+    "type": "panel",
+    "size": [ 123, 120 ],
+    "controls": [
+
+    ]
+  },
+
+  "mod_scroll_content": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "grid_panel": {
+          "type": "grid",
+          "grid_dimensions": [ 1, 1 ],
+          "controls": [
+            
+          ]
+        }
+      }
+    ]
+  },
+
+  "mods_content_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "scrolling_panel@common_scroll_astral.scrolling_panel": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ 379, 162 ],
+          "offset": [ 108, 62.5 ],
+          "$scroll_size": [ 4, "100%" ],
+          "$view_port_size": [ 175, 162 ],
+          "$scrolling_pane_size": [ "100%", "100%" ],
+          "$scrolling_pane_offset": [ 0, 0 ],
+          "$scroll_track_image_control": "astral_textures_common.main_scroll_track",
+          "$scroll_box_mouse_image_control": "astral_textures_common.main_scroll_box",
+          "$scroll_box_touch_image_control": "astral_textures_common.main_scroll_box",
+          "$scrolling_content": "mods_content_astral.mod_scroll_content"
+        }
+      }
+    ]
+  }
+}

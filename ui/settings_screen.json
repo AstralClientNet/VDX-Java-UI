@@ -5,7 +5,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$title_text": "createWorldScreen.header.local",
     "$screen_content": "create_world_dx.center_screen",
@@ -19,7 +22,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$title_text": "createWorldScreen.header.local",
     "$screen_content": "create_world_dx.center_screen",
@@ -31,9 +37,12 @@
 
   "screen_world_edit": {
     "$is_popup_dialog_in_game": false,
-    "load_screen_immediately": true,
+    "load_screen_immediately": false,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$title_text": "createWorldScreen.header.editLocal",
     "$screen_content": "create_world_dx.center_screen",
@@ -48,10 +57,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [],
     "$background_animations": [ ],
     "$screen_content": "settings_dx.center_screen",
-    "$screen_bg_content": "settings_dx.full_screen",
+    "$screen_bg_content": "",
     "$header_safezone_control": "common.empty_panel",
     "$header_bar_control": "common.empty_panel",
     "$is_full_screen_layout": false
@@ -61,7 +70,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$screen_content": "settings_dx.center_screen",
     "$screen_bg_content": "settings_dx.full_screen",
@@ -74,7 +86,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$include_realm_section": true,
     "$is_realms": true,
@@ -90,7 +105,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$include_realm_section": true,
     "$is_realm_slot": true,
@@ -113,7 +131,10 @@
     "$is_popup_dialog_in_game": false,
     "load_screen_immediately": true,
     "$use_loading_bars": false,
-    "$screen_animations": [ ],
+    "$screen_animations": [
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
     "$background_animations": [ ],
     "$include_realm_section": true,
     "$realm_no_world_edit": true,
