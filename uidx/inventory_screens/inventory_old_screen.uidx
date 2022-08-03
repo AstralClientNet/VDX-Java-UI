@@ -407,6 +407,25 @@
     ]
   },
 
+  "label_type@main_button.main_button": {
+    "type": "panel",
+    "alpha": 0.2,
+    "layer": 2,
+    "size": [
+      145,
+      145
+    ],
+    "controls": [
+      {
+        "title_image": {
+          "type": "image",
+          "offset": [ -9 , 10 ],
+          "texture": "textures/ui/astralchest"
+        }
+      }
+    ]
+  },
+
   "center_screen": {
     "type": "panel",
     "controls": [

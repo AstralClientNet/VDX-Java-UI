@@ -8,8 +8,8 @@
     "variables": [
       {
         "requires": "$desktop_screen",
-        "$screen_content": "chest_dx.center_screen",
-        "$screen_center_content": "chest_dx.no_safezone_center_screen",
+        "$screen_content": "chest_dx.main_screen_content",
+        "$screen_center_content": "chest_dx.center_screen",
         "$screen_bg_content": "chest_dx.full_screen"
       },
       {
@@ -26,8 +26,8 @@
     "variables": [
       {
         "requires": "$desktop_screen",
-        "$screen_content": "chest_dx.center_screen",
-        "$screen_center_content": "chest_dx.no_safezone_center_screen",
+        "$screen_content": "chest_dx.no_safezone_center_screen",
+        "$screen_center_content": "chest_dx.center_screen",
         "$screen_bg_content": "chest_dx.full_screen"
       },
       {

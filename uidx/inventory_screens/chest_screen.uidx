@@ -8,6 +8,25 @@
   "chest_grid_item@container_item_dx.container_item": {
     "$item_collection_name": "container_items"
   },
+
+  "label_type@main_button.main_button": {
+    "type": "panel",
+    "alpha": 0.2,
+    "layer": 2,
+    "size": [
+      145,
+      145
+    ],
+    "controls": [
+      {
+        "title_image": {
+          "type": "image",
+          "offset": [ 16, 38 ],
+          "texture": "textures/ui/astralchest"
+        }
+      }
+    ]
+  },
   
   "small_chest_panel_top_half": {
     "type": "panel",
@@ -62,6 +81,13 @@
     "$background_images": "java_gui_common.cell_image",
     "$highlight_control": "item_highlight_dx.highlight_slot_panel",
     "controls": [
+      {
+        "label_type@label_type": {
+          "offset": [ -40, 51 ],
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right"
+        }
+      },
       { "main_buttons_panel@inventory_buttons_dx.main_inventory_buttons_panel": { "layer": 11 } },
       { "dialog_bg_chest@$chest_dialog_bg": { "layer": 1 } },
       { "chest_panel_top_half@$chest_panel_top_half": { "layer": 11 } },

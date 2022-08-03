@@ -807,6 +807,9 @@
         "creator_screen@creator_dx.creator_screen_panel": {
 
         }
+      },
+      {
+        "accessibility@accessibility_dx.accessibility_screen_panel": {}
       }
     ]
   },
