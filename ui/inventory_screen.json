@@ -101,9 +101,11 @@
   },
 
   "crafting_screen": {
+
     "$screen_content": "crafting_old_dx.center_screen",
     "$screen_center_content": "crafting_old_dx.no_safezone_center_screen",
     "$screen_bg_content": "crafting_old_dx.full_screen",
+
     "controls": [
       {
         "variables_button_mappings_and_controls": {
